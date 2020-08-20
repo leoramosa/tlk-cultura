@@ -1,0 +1,702 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../font/one/Gotham-Bold.woff2') format('woff2'),
+      url('../font/one/Gotham-Bold.woff') format('woff'),
+      url('../font/one/Gotham-Bold.ttf') format('truetype'),
+      url('../font/one/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../font/two/Gotham-Medium.woff2') format('woff2'),
+      url('../font/two/Gotham-Medium.woff') format('woff'),
+      url('../font/two/Gotham-Medium.ttf') format('truetype'),
+      url('../font/two/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.pt-nav {
+  min-height: 55px;
+  padding: 10px 0;
+  color: white;
+}
+
+.pt-nav .social a{
+  text-decoration: none
+}
+.pt-nav .social a:hover img{
+  transition: opacity .3s linear;
+  opacity: .5;
+  text-decoration: none
+}
+.social-btns a:hover img{
+  transition: opacity .3s linear;
+  opacity: .5;
+  text-decoration: none
+}
+
+.pt-nav.dark {
+  background-color: #000;
+}
+
+#main{
+  background-color:black;
+}
+
+
+@keyframes animateBorderOne {
+  to {
+    outline-color: white;
+    box-shadow: 0 0 0 5px red;   
+  }
+}
+
+
+.img-kiss{
+  position: absolute;
+  height: 90vh;
+  width: 100%;
+  background: url('../img/img_header.png') center center no-repeat;
+  background-size: cover;
+  background-position-y: 0;
+}
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+}
+
+/* @media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+} */
+
+.home-cyber{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.info-kiss{
+  color: #f0dbb8;
+}
+
+form{
+  background-color: #0000005e;
+  padding: 25px;
+}
+
+.inscribete-p{
+  width: 350px;
+  color: white;
+  margin: 0 auto;
+}
+
+.column-inscri{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.box-event{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  vertical-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.inscri{
+  color: black;
+}
+
+.gratis{
+  background-color: #f70606;
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 42px;
+  letter-spacing: 10px;
+}
+
+.gana{
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 28px
+}
+
+
+.event{
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 36px;
+  color:white;
+  margin-bottom: 0;
+}
+
+.ticket{
+  padding-left: 8px;
+}
+
+.legal{
+  font-size: 14px;
+}
+.legal a{
+  color: white;
+}
+
+.ver-bases{
+  color:white;
+  background-color: #f7060681;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+.title-fijas{
+  text-align: center;
+  font-size: 38px;
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-style: 500;
+  padding-bottom: 15px;
+}
+
+.title-fijas span{
+  background-color: #f70606;
+  color: white;
+}
+
+.ver-bases a{
+  color:white;
+  text-decoration: none;
+}
+
+
+.condicion{
+  font-size: 12px;
+  font-family: Arial;
+  color: white;
+  padding: 0 20px 0 20px;
+  margin-bottom: 5px;
+}
+
+.back-inscri{
+  background-color: white;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 42px
+}
+
+.registrate{
+  width: 461px;
+}
+
+.title-registrate{
+  font-size: 34px;
+  font-family: 'Gotham';
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  margin-bottom: 0;
+}
+
+.form-control {
+  margin-bottom: 15px;
+  border-radius: 25px !important;
+  padding: 25px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+
+.info-ganadores{
+  margin-bottom: 20px;
+}
+
+.opotion-event{
+  text-align: left !important;
+}
+
+.btn-column{
+  margin: 0 auto;
+}
+
+.btn-column .btn-inscribete{
+  border-radius: 25px;
+  font-size: 16px;
+}
+
+
+
+/* section logo cyber and time */
+
+.column-logo{
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+
+
+
+.logo-event{
+  background: black url('../img/background-logo.png')  no-repeat center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.column-bajar{
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+.rest-time{
+  margin-bottom: 0;
+}
+
+.date-time{
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-cyber{
+  color:white;
+  background-color: #e30613;
+  border: 2px solid #e30613;
+  display: block;
+  display: inline-block;
+}
+
+.vive-cyber{
+  color: #e30613;
+  font-size: 25px;
+  font-family: 'Gotham';
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 20px;
+}
+/* end section logo cyber */
+
+
+/* informatio cyber patrio */
+
+.column-info{
+  justify-content: center;
+  padding-bottom: 35px;
+}
+
+.info-event{
+  font-size: 17px;
+  background-color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+  color: #606060;
+}
+
+.information{
+  padding: 20px 100px 20px 100px;
+}
+
+.title-patrio{
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-style:500;
+  font-size: 38px;
+  color: black;
+}
+
+.btn-tlk{
+  padding: 8px 32px 8px 32px;
+  border-radius: 30px;
+  font-size: 25px;
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-style:500;
+}
+
+/* end informatio cyber patrio */
+
+/* start icons cyber */
+.icons{
+  background-color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.img-icons{
+  text-align: center;
+}
+.title-icons{
+  font-family: 'Gotham';
+  font-weight: bold;
+  font-style:500;
+  font-size: 22px;
+}
+/* end icons cyber */
+
+
+
+
+.img-header-small{
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+.footer a {
+  color: #7f7f7f;
+  text-decoration: none
+}
+
+.footer a:hover {
+  color: #da251d;
+  text-decoration: none
+}
+
+.footer .fa_social {
+  background-color: white;
+  height: 22px;
+  width: 22px;
+  color: #292929;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 22px;
+  transition: all 0.2s;
+}
+
+.footer .fa_social:hover {
+  color: white;
+  background-color: #D03456    ;
+  text-decoration: none;
+}
+
+.footer {
+  background: #080808;
+  color: #f0f0f0;
+  font-size: .9em;
+  padding: 25px 0;
+  width: 100%;
+}
+
+
+@media only screen and (max-width:1367px) {
+  
+}
+
+
+@media only screen and (max-width:1200px) {
+
+  header {
+    position: relative;
+    background-color: black;
+    height: 847px;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-kiss {
+  height: 847px;
+}
+
+/* header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 847px;
+  width: 100%;
+  background-color: black;
+  opacity: 0;
+  z-index: 1;
+} */
+
+}
+
+@media only screen and (min-width: 992px) {
+  .whatsapp {
+      display: none;
+  }
+
+  .img-header-small{
+    display: none;
+  }
+
+  
+
+  
+
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  header {
+    position: relative;
+    background-color: black;
+    height: auto;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .logo-event {
+    display: none;
+}
+
+
+
+  .img-kiss {
+    display: none;
+  }
+ 
+  .brand{
+    display: none;
+  }
+
+  .pt-nav .social img {
+    height: 23px;
+  }
+
+  .home-cyber {
+    padding-top: 0
+  }
+
+  .column-logo {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    }
+
+.date-time{
+  padding-top: 25px;
+}
+
+
+}
+
+
+@media only screen and (max-width:800px) {
+
+
+}
+
+@media only screen and (max-width:768px) {
+  .footer {
+    font-size: 12px;
+  }
+
+  .information {
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+  }
+
+  .icons .container .row{
+    margin: 0;
+  }
+
+  .title-icons {
+    font-size: 18px;
+  }
+
+  .title-fijas {
+
+    font-size: 28px;
+}
+
+
+
+}
+
+@media only screen and (max-width:575px) {
+
+  .information {
+    padding: 20px;
+  }
+
+  .footer-info{
+    width: 40%;
+    padding-left: 25px;
+  }
+  
+  .column-footer{
+    justify-content: center;
+  }
+
+  .footer-three{
+    width: 100%;
+    padding-left: 80px;
+    padding-top: 30px;
+
+  }
+  .footer-four{
+    width: 100%;
+  }
+
+  .img-icons p {
+   padding-left: 50px;
+   padding-right: 50px;
+  }
+
+  .registrate {
+    width: auto;
+}
+  .title-patrio {
+    font-size: 26px;
+
+  }
+  .title-fijas {
+    font-size: 22px;
+}
+}
+
+@media only screen and (max-width:480px) {
+
+
+  .footer-info{
+    width: 40%;
+    padding-left: 0px;
+  }
+  .footer-three{
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 30px;
+
+  }
+  .footer-four{
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .btn-tlk {
+    padding: 8px 32px 8px 32px;
+    border-radius: 30px;
+    font-size: 18px;
+    }
+    .ds-white .ds-element-value {
+      font-size: 2.8em;
+  }
+
+  .title-patrio {
+    font-size: 28px;
+  }
+  .vive-cyber {
+  margin-bottom: 0;
+}
+
+  .inscribete-p {
+    width: auto;
+  }
+
+  .title-fijas {
+    font-size:20px;
+    }
+
+}
+
+
+@media only screen and (max-width:370px) {
+  .gana {
+    font-size: 25px;
+  }
+
+  .title-registrate {
+    font-size: 28px;
+  }
+  .info-ganadores {
+    font-size: 15px;
+  }
+
+  .img-icons p {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
+
+
+@media only screen and (max-width:320px) {
+    .column-registrer {
+      padding: 0;
+      padding-bottom: 35px;
+  }
+  .information {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .title-patrio {
+    font-size: 18px;
+    }
+    .event {
+      font-family: 'Gotham';
+      font-weight: bold;
+      font-style: normal;
+      font-size: 26px;
+      color: white;
+      margin-bottom: 0;
+  }
+
+}
