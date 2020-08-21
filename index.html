@@ -4,36 +4,36 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PromPeru</title>
-    <meta name="description" content="PromPeru" />
-    <meta name="keywords" content="PromPeru, conciertom musica" />
+    <title>Ministerio de Cultura</title>
+    <meta name="description" content="Ministerio de Cultura" />
+    <meta name="keywords" content="Ministerio de Cultura" />
     <link
       rel="icon"
       type="image/png"
-      href="https://www.teleticket.com.pe/tlk_imagenes/icono.png"
+      href=""
     />
     <link
       rel="SHORTCUT ICON"
-      href="https://www.teleticket.com.pe/tlk_imagenes/icono.png"
+      href=""
     />
     <link
       rel="image_src"
       type="image/jpeg"
-      href="recursos/img/rs-kiss-2020.jpg"
+      href=""
     />
     <meta property="fb:app_id" content="142076532531892" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="PromPeru" />
+    <meta property="og:title" content="Ministerio de Cultura" />
     <meta property="og:url" content="" />
-    <meta property="og:image" content="recursos/img/rs-kiss-2020.jpg" />
-    <meta property="og:description" content="PromPeru" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Ministerio de Cultura" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@teleticketperu" />
     <meta name="twitter:creator" content="@teleticketperu" />
     <meta name="twitter:domain" content="www.teleticket.com.pe" />
-    <meta name="twitter:title" content="PromPeru" />
-    <meta name="twitter:description" content="PromPeru" />
-    <meta name="twitter:image" content="recursos/img/rs-kiss-2020.jpg" />
+    <meta name="twitter:title" content="Ministerio de Cultura" />
+    <meta name="twitter:description" content="Ministerio de Cultura" />
+    <meta name="twitter:image" content="" />
 
     <link
       rel="stylesheet"
@@ -67,9 +67,9 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="60" >
     <!-- Nav-->
-    <nav class="pt-nav dark sticky-top">
+    <nav class=" pt-nav dark sticky-top">
       <div class="container">
         <div class="row">
           <div class="col-3 col-md-6col-xs-3 col-lg-3 text-left btn-logo">
@@ -84,7 +84,7 @@
           </div>
           <div class="col-9 col-md-6 col-xs-9 col-lg-9 btn-events text-right">
             <div class="btn-enlaces">
-              <a href=""  class="btn-menub register">
+              <a   class="btn-menub register" >
                   Regístrate
               </a>
               <div class="btn-menub where">
@@ -98,11 +98,11 @@
                 </div>
               </div>
               
-              <a href=""  class="btn-menub planing-btn">
+              <a  class="btn-menub planing-btn" data-scroll href="#eventplaning">
                   Planifica tu viaje
               </a>
               
-              <a href=""  class="btn-menub blogg">
+              <a  class="btn-menub blogg" data-scroll href="#eventblog">
                   Blog del viajero
               </a>
               
@@ -192,7 +192,12 @@
               <div class="swiper-scrollbar"></div>
           </div>
           
-
+          <div class="line-miinis">
+            <div class="line1m"></div>
+            <div class="line2m"></div>
+            <div class="line3m"></div>
+            <div class="line4m"></div>
+          </div>
         </div>
       </header>
       <section class="destinos">
@@ -776,7 +781,7 @@
 
       </section>
 
-      <section class="mochileros">
+      <section class="mochileros"  >
         <div class="container">
           <div class="title-mochilero-general">
             <img class="img-fluid" src="recursos/img/title-mochilero.png" alt="">
@@ -865,7 +870,7 @@
         </div>
 
       </section>
-      <section class="planing">
+      <section class="planing" id="eventplaning" data-scroll-id="eventplaning">
         <div class="overlay-planing">
         <div class="container ">
           <div class="row">
@@ -1003,7 +1008,7 @@
       </div>
       </section>
 
-      <section class="blog">
+      <section class="blog"id="eventblog" data-scroll href="#eventblog">
         <div class="container">
           <div class="row">
             <div class="calendario col-lg-12">
@@ -1114,12 +1119,12 @@
           <div class="col-lg-3">
             <img class="img-fluid" src="recursos/img/logoprom.png" alt="">
           </div>
-          <div class="col-lg-3">
-            <ul class="ul-contanto">
+          <div class="col-lg-3 about-footer">
+            
               <li>Sobre nosotros</li>
               <li>Asociados</li>
               <li>Políticas de Privacidad</li>
-            </ul>
+            
           </div>
           <div class="col-lg-3 informatica-turimos">
            
@@ -1131,17 +1136,37 @@
           </div>
           
           <div class="col-lg-3">
-            <p class="title-redes">ENCUÉNTRANOS TAMBIÉN EN</p>
-            <div class="logo-footer-redes"></div>
+            <p class="title-redes">ENCUÉNTRANOS TAMBIÉN EN:</p>
+            <div class="logo-footer-redes">
+              <div class="redes__footer">
+                <img class="img-fluid" src="recursos/img/redes/facebook.png" alt="">
+              </div>
+              <div class="redes__footer">
+                <img class="img-fluid" src="recursos/img/redes/youtube.png" alt="">
+              </div>
+              <div class="redes__footer">
+                <img class="img-fluid" src="recursos/img/redes/twiiter.png" alt="">
+              </div>
+              <div class="redes__footer">
+                <img class="img-fluid" src="recursos/img/redes/instagram.png" alt="">
+              </div>
+            </div>
             <div class="footer-contacto">
               <p>Callcenter: 01 584 549</p>
-              <p>Email: Informes@promperu.com</p>
+              <p>Email: info@miniscultura.com</p>
             </div>
           </div>
         </div>
         
       </div>
+      
     </footer>
+    <div class="line-miinis">
+      <div class="line1m"></div>
+      <div class="line2m"></div>
+      <div class="line3m"></div>
+      <div class="line4m"></div>
+    </div>
     <!-- /Footer -->
 
     
@@ -1394,8 +1419,9 @@
               
     
         </script>
-
-
+        <script src="https://cdn.teleticket.com.pe/especiales/hot-wheels-2019/js/vendor/wow/wow.min.js"></script>
+<script src="https://cdn.teleticket.com.pe/especiales/hot-wheels-2019/js/vendor/scrollSmooting/smooth-scroll.min.js"></script>
+<script src="https://cdn.teleticket.com.pe/especiales/hot-wheels-2019/js/main.js"></script>
     
   </body>
 </html>

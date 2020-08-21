@@ -74,6 +74,7 @@
   font-size: 16px;
   padding: 20px 30px 20px 30px;
   color: white;
+  cursor: pointer;
 }
 
 .btn-menub.register {
@@ -144,6 +145,30 @@
 /*end  styles menu */
 
 /* start style banner */
+
+.line-miinis {
+  display: flex;
+}
+.line1m {
+  height: 10px;
+  width: 25%;
+  background-color: #dc912d;
+}
+.line2m {
+  height: 10px;
+  width: 25%;
+  background-color: #bd4591;
+}
+.line3m {
+  height: 10px;
+  width: 25%;
+  background-color: #6179ba;
+}
+.line4m {
+  height: 10px;
+  width: 25%;
+  background-color: #61b350;
+}
 
 .img-banner {
   background-image: url("../img/machupicchu.jpg");
@@ -835,6 +860,8 @@
 
 .calen-motrar {
   text-align: right;
+  cursor: pointer;
+  font-weight: 600;
 }
 .blog-title {
   font-size: 45px;
@@ -888,6 +915,27 @@
   color: #7f7f7f;
   text-decoration: none;
 }
+.about-footer {
+  list-style: none;
+  padding-left: 44px;
+}
+.about-footer li {
+  padding: 10px 0;
+}
+
+.title-redes {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.logo-footer-redes {
+  display: flex;
+  padding: 10px 0;
+}
+.logo-footer-redes .redes__footer {
+  padding: 5px;
+}
 
 .footer a:hover {
   color: #da251d;
@@ -917,12 +965,12 @@
 }
 
 .footer {
-  padding-top: 25px;
   border-top: 1px solid black;
   color: #5c5c5c;
   font-size: 0.9em;
   padding: 25px 0;
   width: 100%;
+  padding-bottom: 35px;
 }
 
 .modal-body {
@@ -961,6 +1009,12 @@
   cursor: pointer;
 }
 
+.btn-paquete.cerrar-modal:hover {
+  color: white;
+  transition: 0.5s;
+  background-color: #bf0933;
+}
+
 .ul-contanto {
   margin-top: 0;
   text-decoration: none;
@@ -977,6 +1031,12 @@
 
 .informatica-turimos li {
   list-style: none;
+  padding: 10px 0;
+}
+
+.informatica-turimos li:nth-child(1) {
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .fotos-viajeros {
