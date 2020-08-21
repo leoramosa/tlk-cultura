@@ -1,419 +1,897 @@
 @font-face {
-  font-family: 'Gotham';
-  src: url('../font/one/Gotham-Bold.woff2') format('woff2'),
-      url('../font/one/Gotham-Bold.woff') format('woff'),
-      url('../font/one/Gotham-Bold.ttf') format('truetype'),
-      url('../font/one/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  font-family: "Gotham";
+  src: url("../font/one/Gotham-Bold.woff2") format("woff2"),
+    url("../font/one/Gotham-Bold.woff") format("woff"),
+    url("../font/one/Gotham-Bold.ttf") format("truetype"),
+    url("../font/one/Gotham-Bold.svg#Gotham-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('../font/two/Gotham-Medium.woff2') format('woff2'),
-      url('../font/two/Gotham-Medium.woff') format('woff'),
-      url('../font/two/Gotham-Medium.ttf') format('truetype'),
-      url('../font/two/Gotham-Medium.svg#Gotham-Medium') format('svg');
+  font-family: "Gotham";
+  src: url("../font/two/Gotham-Medium.woff2") format("woff2"),
+    url("../font/two/Gotham-Medium.woff") format("woff"),
+    url("../font/two/Gotham-Medium.ttf") format("truetype"),
+    url("../font/two/Gotham-Medium.svg#Gotham-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 .pt-nav {
-  min-height: 55px;
-  padding: 10px 0;
   color: white;
+  background-color: white;
 }
 
-.pt-nav .social a{
-  text-decoration: none
+.pt-nav .social a {
+  text-decoration: none;
 }
-.pt-nav .social a:hover img{
-  transition: opacity .3s linear;
-  opacity: .5;
-  text-decoration: none
+.pt-nav .social a:hover img {
+  transition: opacity 0.3s linear;
+  opacity: 0.5;
+  text-decoration: none;
 }
-.social-btns a:hover img{
-  transition: opacity .3s linear;
-  opacity: .5;
-  text-decoration: none
-}
-
-.pt-nav.dark {
-  background-color: #000;
-}
-
-#main{
-  background-color:black;
-}
-
-
-@keyframes animateBorderOne {
-  to {
-    outline-color: white;
-    box-shadow: 0 0 0 5px red;   
-  }
-}
-
-
-.img-kiss{
-  position: absolute;
-  height: 90vh;
-  width: 100%;
-  background: url('../img/img_header.png') center center no-repeat;
-  background-size: cover;
-  background-position-y: 0;
-}
-
-
-header {
-  position: relative;
-  background-color: black;
-  height: 90vh;
-  min-height: 25rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
-  position: relative;
-  z-index: 2;
-}
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0;
-  z-index: 1;
-}
-
-/* @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
-  header video {
-    display: none;
-  }
-} */
-
-.home-cyber{
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
-
-
-.info-kiss{
-  color: #f0dbb8;
-}
-
-form{
-  background-color: #0000005e;
-  padding: 25px;
-}
-
-.inscribete-p{
-  width: 350px;
-  color: white;
-  margin: 0 auto;
-}
-
-.column-inscri{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.box-event{
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  vertical-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.inscri{
-  color: black;
-}
-
-.gratis{
-  background-color: #f70606;
-  font-family: 'Gotham';
-  font-weight: bold;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 42px;
-  letter-spacing: 10px;
-}
-
-.gana{
-  font-family: 'Gotham';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 28px
-}
-
-
-.event{
-  font-family: 'Gotham';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 36px;
-  color:white;
-  margin-bottom: 0;
-}
-
-.ticket{
-  padding-left: 8px;
-}
-
-.legal{
-  font-size: 14px;
-}
-.legal a{
-  color: white;
-}
-
-.ver-bases{
-  color:white;
-  background-color: #f7060681;
-  border-radius: 6px;
-  display: inline-block;
-  font-size: 12px;
-  padding: 2px 5px;
-}
-
-.title-fijas{
-  text-align: center;
-  font-size: 38px;
-  font-family: 'Gotham';
-  font-weight: bold;
-  font-style: 500;
-  padding-bottom: 15px;
-}
-
-.title-fijas span{
-  background-color: #f70606;
-  color: white;
-}
-
-.ver-bases a{
-  color:white;
+.social-btns a:hover img {
+  transition: opacity 0.3s linear;
+  opacity: 0.5;
   text-decoration: none;
 }
 
-
-.condicion{
-  font-size: 12px;
-  font-family: Arial;
-  color: white;
-  padding: 0 20px 0 20px;
-  margin-bottom: 5px;
+.pt-nav.dark {
 }
 
-.back-inscri{
-  background-color: white;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 42px
+#main {
 }
 
-.registrate{
-  width: 461px;
-}
-
-.title-registrate{
-  font-size: 34px;
-  font-family: 'Gotham';
-  font-weight: 500;
-  font-style: normal;
-  color: white;
-  margin-bottom: 0;
-}
-
-.form-control {
-  margin-bottom: 15px;
-  border-radius: 25px !important;
-  padding: 25px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-}
-
-.info-ganadores{
-  margin-bottom: 20px;
-}
-
-.opotion-event{
-  text-align: left !important;
-}
-
-.btn-column{
-  margin: 0 auto;
-}
-
-.btn-column .btn-inscribete{
-  border-radius: 25px;
-  font-size: 16px;
-}
-
-
-
-/* section logo cyber and time */
-
-.column-logo{
-  padding-bottom: 10px;
-  justify-content: center;
-}
-
-
-
-
-.logo-event{
-  background: black url('../img/background-logo.png')  no-repeat center center;
-  background-size: cover;
-  width: 100%;
-}
-
-.column-bajar{
-  text-align: center;
-  justify-content: center;
-  padding-bottom: 20px;
-  padding-top: 40px;
-}
-
-.rest-time{
-  margin-bottom: 0;
-}
-
-.date-time{
+/* styles menu */
+.btn-logo {
+  align-items: center;
   display: flex;
-  vertical-align: center;
-  justify-content: center;
+}
+
+.btn-events {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-enlaces {
+  display: flex;
+}
+.btn-enlaces a {
+  text-decoration: none;
+  display: flex;
+}
+
+.btn-enlaces a:hover {
+  color: rgb(209, 209, 209);
+}
+
+.btn-menub {
+  font-size: 16px;
+  padding: 20px 30px 20px 30px;
+  color: white;
+}
+
+.btn-menub.register {
+  background-color: #dc912d;
+}
+.btn-menub.where {
+  background-color: #bd4591;
+}
+.btn-menub.planing-btn {
+  background-color: #6179ba;
+}
+.btn-menub.blogg {
+  background-color: #61b350;
+}
+
+.btn-menub.register:hover {
+  background-color: #aa6811;
+  transition: 0.5s;
+  color: white;
+}
+.btn-menub.where:hover {
+  background-color: #862261;
+  transition: 0.5s;
+  color: white;
+}
+
+.dropdown-toggle {
+  display: block !important;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  top: 18px !important;
+  left: -31px !important;
+  will-change: transform;
+  background-color: #862261;
+  color: white;
+  padding: 0;
+}
+
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover {
+  background: #bd4591;
+}
+
+.btn-menub.planing-btn:hover {
+  background-color: #284699;
+  transition: 0.5s;
+  color: white;
+}
+.btn-menub.blogg:hover {
+  background-color: #377a29;
+  transition: 0.5s;
+  color: white;
+}
+
+.idioma {
+  padding: 0px 20px;
+  display: flex;
   align-items: center;
 }
 
-.time-cyber{
-  color:white;
-  background-color: #e30613;
-  border: 2px solid #e30613;
-  display: block;
+.idioma-form {
+  margin: 0;
+}
+/*end  styles menu */
+
+/* start style banner */
+
+.img-banner {
+  background-image: url("../img/machupicchu.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+.img-banner.dos {
+  background-image: url("../img/arequipa.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+.img-banner.tres {
+  background-image: url("../img/ica.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.overlay {
+  background-color: #00000057;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.swiper-slide a {
+  text-decoration: none;
+  color: white;
+}
+
+.swiper-button-prev {
+  background-color: #ffffff4d;
+  padding: 36px;
+  border-radius: 50%;
+  color: white;
+}
+.swiper-button-next {
+  background-color: #ffffff4d;
+  padding: 36px;
+  border-radius: 50%;
+  color: white;
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  color: white;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  color: white;
+}
+
+.content-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.img-subimagen {
+  padding: 53px;
+  text-align: center;
+  padding-top: 25%;
+}
+.peru-place {
+  padding-bottom: 45px;
+}
+.peru-place p {
+  background-color: #e52543;
+  display: inline-block;
+  padding: 10px 55px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.peru-place {
+  text-align: center;
+}
+
+/* end style banner */
+
+/* style destino */
+
+.destinos {
+  padding: 55px;
+}
+.title-destinos {
+  font-size: 47px;
+  font-weight: 800;
+  color: #941b80;
+  margin-bottom: 2px;
+}
+.line-destinos {
+  height: 5px;
+  background-color: #941b80;
+  width: 35%;
+}
+.subcontent__place_img {
+  position: relative;
+  display: inline-block;
+  margin-top: 27px;
+}
+
+.place-destino {
   display: inline-block;
 }
 
-.vive-cyber{
-  color: #e30613;
-  font-size: 25px;
-  font-family: 'Gotham';
-  font-weight: 500;
-  font-style: normal;
-  padding-top: 20px;
-}
-/* end section logo cyber */
-
-
-/* informatio cyber patrio */
-
-.column-info{
-  justify-content: center;
-  padding-bottom: 35px;
+.info__place-destino {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  font-size: 23px;
+  padding: 17px;
 }
 
-.info-event{
-  font-size: 17px;
-  background-color: #f2f2f2;
-  font-family: 'Roboto', sans-serif;
-  color: #606060;
+.title-ciudad {
+  margin: 0;
+  font-size: 29px;
+  font-weight: 800;
+  font-style: italic;
+}
+.provincia-ciudad {
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0;
+}
+.clima-ciudad {
+  align-items: center;
+  display: flex;
+  font-size: 35px;
+  font-weight: 800;
+}
+.clima-ciudad span {
+  color: #efcf2f;
 }
 
-.information{
-  padding: 20px 100px 20px 100px;
+.overlay-cuidad {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
-.title-patrio{
-  font-family: 'Gotham';
-  font-weight: bold;
-  font-style:500;
-  font-size: 38px;
-  color: black;
+.info-destino-ciudad {
+  width: 80%;
+  font-size: 16px;
+  padding: 9px;
 }
 
-.btn-tlk{
-  padding: 8px 32px 8px 32px;
-  border-radius: 30px;
-  font-size: 25px;
-  font-family: 'Gotham';
-  font-weight: bold;
-  font-style:500;
+.btn-paquete {
+  border: 2px solid #941b80;
+  display: inline-block;
+  padding: 11px 43px;
+  color: #941b80;
+  font-size: 26px;
+  font-weight: 800;
 }
 
-/* end informatio cyber patrio */
-
-/* start icons cyber */
-.icons{
-  background-color: white;
-  padding-top: 25px;
-  padding-bottom: 25px;
+.btn-paquete:hover {
+  background-color: #941b80;
+  color: white;
+  transition: 0.5s ease-in-out;
 }
 
-.img-icons{
-  text-align: center;
-}
-.title-icons{
-  font-family: 'Gotham';
-  font-weight: bold;
-  font-style:500;
-  font-size: 22px;
-}
-/* end icons cyber */
+/* end style destino */
 
+/* style mapa */
 
+/*mapa*/
 
-
-.img-header-small{
+.map_peru {
   position: relative;
 }
 
+.titulo_territorios {
+  position: absolute;
+  bottom: 5%;
+}
 
+.mapita {
+  margin-left: auto;
+  margin-right: 25px;
+  width: 85%;
+  display: block;
+}
+/*estilos departamentos*/
+.st1 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
 
+.st2 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st3 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st4 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st5 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st6 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st7 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st8 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st9 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st10 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st11 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st12 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st13 {
+  fill: #90738b;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st14 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st15 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st16 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st17 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st18 {
+  fill: #90738b;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st19 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st20 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st21 {
+  fill: #90738b;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st22 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st23 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st24 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st25 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+.st26 {
+  fill: #e0e0e0;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+  -webkit-transition: all 0.9s ease; /* Safari y Chrome */
+  -moz-transition: all 0.9s ease; /* Firefox */
+  -o-transition: all 0.9s ease; /* IE 9 */
+  -ms-transition: all 0.9s ease; /* Opera */
+}
+
+/*-----------------hover-------------------*/
+
+#D3b:visited .st21 {
+  fill: tomato;
+}
+
+.st21:hover {
+  fill: #992c87;
+}
+
+.st21:hover {
+  fill: #992c87;
+}
+.st13:hover {
+  fill: #992c87;
+}
+.st18:hover {
+  fill: #992c87;
+}
+
+/*mapa*/
+
+/*tooltip*/
+.tooltip ul {
+  padding: 10px;
+  font-size: 1rem;
+  background: #2db3ad;
+  color: #fff;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: #2db3ad;
+  border-radius: 0.25rem;
+}
+
+.tooltip-inner h5 {
+  margin-bottom: 0;
+}
+
+.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  top: 0;
+  border-width: 0.4rem 0.4rem 0;
+  border-top-color: #41bab4;
+}
+/*tooltip*/
+
+/* end style mapa */
+
+/* styles destinos */
+.mochileros {
+  padding: 35px;
+  background-color: #f8b133;
+}
+
+.title-mochilero-general {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.container-img-global {
+  position: relative;
+}
+.overlay-mochilero {
+  position: absolute;
+  border: 1px solid white;
+  width: 84%;
+  height: 100%;
+  left: -19px;
+  bottom: -13px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.overlay-mochilero:hover {
+  background: #0404041f;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.mini-title-canon {
+  position: absolute;
+  bottom: 0;
+  font-size: 29px;
+  font-style: italic;
+  color: white;
+  font-weight: 900;
+  padding: 0px 0px 15px 15px;
+  text-transform: uppercase;
+  line-height: 33px;
+}
+
+.swiper-container.two .swiper-slide {
+  margin-left: 25px;
+  margin-right: 15px;
+}
+
+.btn-mochilero-info {
+  border: 3px solid #941b80;
+  display: inline-block;
+  font-size: 24px;
+  color: #941b80;
+  padding: 5px 45px;
+  margin: 23px 0 0 34px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn-mochilero-info:hover {
+  background-color: #941b80;
+  color: white;
+  transition: 0.5s;
+}
+
+/* end styles destinos */
+
+/* styles planing */
+
+.planing {
+  background: url("../img/back-planifica.jpg");
+  background-size: cover;
+}
+.overlay-planing {
+  background: #9c0133c4;
+  padding: 35px;
+}
+
+.planifica {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.planifica p {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.title-img-mes {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.input-mes {
+  display: none;
+}
+
+.form-check {
+  padding-left: 0;
+}
+
+.mes-plan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.meses {
+  padding: 10px 19px;
+  margin: 3px;
+  border: 2px solid white;
+  min-width: 80px;
+  color: white;
+}
+.tipo-mes {
+  padding: 10px 33px;
+  margin: 3px;
+  border: 2px solid white;
+  color: white;
+}
+
+.mes-plan .meses:nth-child(8) {
+  background-color: #00a09987;
+}
+
+.mes-plan .tipo-mes:nth-child(1) {
+  padding: 10px 47px;
+}
+.mes-plan .tipo-mes:nth-child(3) {
+  background-color: #00a09987;
+  padding: 10px 45px;
+}
+.mes-plan .tipo-mes:nth-child(5) {
+  padding: 10px 38px;
+}
+
+.clima-mes {
+  padding: 10px 34px;
+  margin: 3px;
+  border: 2px solid white;
+  color: white;
+}
+
+.mes-plan .clima-mes:nth-child(1) {
+  padding: 10px 50px;
+}
+.mes-plan .clima-mes:nth-child(2) {
+  padding: 10px 45px;
+  background-color: #00a09987;
+}
+.mes-plan .clima-mes:nth-child(3) {
+  padding: 10px 38px;
+}
+
+.planifica-btn {
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.btn-buscar {
+  padding: 5px 78px;
+  margin-left: 27px;
+}
+
+/* end styles planing */
+
+.blog {
+  padding: 30px;
+  background-color: #f7f7f7;
+}
+
+.calen-motrar {
+  text-align: right;
+}
+.blog-title {
+  font-size: 45px;
+  font-weight: 600;
+  color: #5a5a5a;
+  padding-bottom: 15px;
+}
+
+.blog-mini-title {
+  color: #5a5a5a;
+  font-size: 19px;
+}
+
+.img-blog:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.info-title-blog {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5a5a5a;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.galeria {
+  padding: 56px;
+}
+
+.title-fotos {
+  text-align: center;
+  padding: 17px;
+}
+
+.gallery-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foto-im {
+  width: 280px;
+  border: 1px solid white;
+}
+.foto-im:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
 
 .footer a {
   color: #7f7f7f;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .footer a:hover {
   color: #da251d;
-  text-decoration: none
+  text-decoration: none;
 }
 
 .footer .fa_social {
@@ -429,274 +907,181 @@ form{
 
 .footer .fa_social:hover {
   color: white;
-  background-color: #D03456    ;
+  background-color: #d03456;
   text-decoration: none;
 }
 
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: "prev";
+}
+
 .footer {
-  background: #080808;
-  color: #f0f0f0;
-  font-size: .9em;
+  padding-top: 25px;
+  border-top: 1px solid black;
+  color: #5c5c5c;
+  font-size: 0.9em;
   padding: 25px 0;
   width: 100%;
 }
 
-
-@media only screen and (max-width:1367px) {
-  
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
 }
 
-
-@media only screen and (max-width:1200px) {
-
-  header {
-    position: relative;
-    background-color: black;
-    height: 847px;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
+.subcontent__place_img.modal {
+  position: relative;
+  display: inline-block;
+  margin-top: 0;
 }
 
-.img-kiss {
-  height: 847px;
-}
-
-/* header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 847px;
+.info-destino-ciudad.modaltexto {
   width: 100%;
-  background-color: black;
-  opacity: 0;
-  z-index: 1;
-} */
+  font-size: 16px;
+  padding: 9px;
+}
+.btn-paquete {
+  cursor: pointer;
+}
 
+.btn-modals {
+  padding: 15px;
+}
+
+.btn-paquete.cerrar-modal {
+  border: 2px solid #bf0933;
+  display: inline-block;
+  padding: 11px 43px;
+  color: #bf0933;
+  font-size: 26px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.ul-contanto {
+  margin-top: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  margin-left: 0;
+}
+.footer-row {
+  padding-top: 25px;
+}
+.footer-contacto p {
+  margin: 0;
+}
+
+.informatica-turimos li {
+  list-style: none;
+}
+
+.fotos-viajeros {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.fotos-viajeros span {
+  color: #da5353;
+}
+
+@media only screen and (max-width: 1367px) {
+}
+
+@media only screen and (max-width: 1200px) {
 }
 
 @media only screen and (min-width: 992px) {
   .whatsapp {
-      display: none;
-  }
-
-  .img-header-small{
     display: none;
   }
 
-  
-
-  
-
-
+  .img-header-small {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-
-  header {
-    position: relative;
-    background-color: black;
-    height: auto;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-
   .logo-event {
     display: none;
-}
-
-
-
-  .img-kiss {
-    display: none;
   }
- 
-  .brand{
+
+  .brand {
     display: none;
   }
 
   .pt-nav .social img {
     height: 23px;
   }
-
-  .home-cyber {
-    padding-top: 0
-  }
-
-  .column-logo {
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    }
-
-.date-time{
-  padding-top: 25px;
 }
 
-
+@media only screen and (max-width: 800px) {
 }
 
-
-@media only screen and (max-width:800px) {
-
-
-}
-
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .footer {
     font-size: 12px;
   }
 
-  .information {
-    padding: 20px 0px 20px 0px;
-    text-align: center;
-  }
-
-  .icons .container .row{
+  .icons .container .row {
     margin: 0;
   }
-
-  .title-icons {
-    font-size: 18px;
-  }
-
-  .title-fijas {
-
-    font-size: 28px;
 }
 
-
-
-}
-
-@media only screen and (max-width:575px) {
-
-  .information {
-    padding: 20px;
-  }
-
-  .footer-info{
+@media only screen and (max-width: 575px) {
+  .footer-info {
     width: 40%;
     padding-left: 25px;
   }
-  
-  .column-footer{
+
+  .column-footer {
     justify-content: center;
   }
 
-  .footer-three{
+  .footer-three {
     width: 100%;
     padding-left: 80px;
     padding-top: 30px;
-
   }
-  .footer-four{
+  .footer-four {
     width: 100%;
   }
 
   .img-icons p {
-   padding-left: 50px;
-   padding-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-
-  .registrate {
-    width: auto;
-}
-  .title-patrio {
-    font-size: 26px;
-
-  }
-  .title-fijas {
-    font-size: 22px;
-}
 }
 
-@media only screen and (max-width:480px) {
-
-
-  .footer-info{
+@media only screen and (max-width: 480px) {
+  .footer-info {
     width: 40%;
     padding-left: 0px;
   }
-  .footer-three{
+  .footer-three {
     width: 100%;
     padding-left: 40px;
     padding-top: 30px;
-
   }
-  .footer-four{
+  .footer-four {
     width: 100%;
     padding-top: 20px;
   }
-
-  .btn-tlk {
-    padding: 8px 32px 8px 32px;
-    border-radius: 30px;
-    font-size: 18px;
-    }
-    .ds-white .ds-element-value {
-      font-size: 2.8em;
-  }
-
-  .title-patrio {
-    font-size: 28px;
-  }
-  .vive-cyber {
-  margin-bottom: 0;
 }
 
-  .inscribete-p {
-    width: auto;
-  }
-
-  .title-fijas {
-    font-size:20px;
-    }
-
+@media only screen and (max-width: 370px) {
 }
 
-
-@media only screen and (max-width:370px) {
-  .gana {
-    font-size: 25px;
+@media only screen and (max-width: 320px) {
+  .event {
+    font-family: "Gotham";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 26px;
+    color: white;
+    margin-bottom: 0;
   }
-
-  .title-registrate {
-    font-size: 28px;
-  }
-  .info-ganadores {
-    font-size: 15px;
-  }
-
-  .img-icons p {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-}
-
-
-@media only screen and (max-width:320px) {
-    .column-registrer {
-      padding: 0;
-      padding-bottom: 35px;
-  }
-  .information {
-    padding: 20px;
-    font-size: 14px;
-  }
-
-  .title-patrio {
-    font-size: 18px;
-    }
-    .event {
-      font-family: 'Gotham';
-      font-weight: bold;
-      font-style: normal;
-      font-size: 26px;
-      color: white;
-      margin-bottom: 0;
-  }
-
 }
